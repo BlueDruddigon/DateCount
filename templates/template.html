@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/template.css') }}">
+    <script src="{{ url_for('static', filename='javascript/template.js') }}"></script>
+</head>
+<body style="text-align:center">
+    <header style="text-align:center">
+        <div style="text-align:center" class="container">
+            <h1 style="text-align:center" class="logo">First Web App</h1>
+            <strong><nav>
+                <ul style="text-align:center" class="menu">
+                    <li style="text-align:center"><a href="{{ url_for('home') }}">Home</a></li>
+                    <li style="text-align:center"><a href="{{ url_for('about') }}">About</a></li>
+                    <li style="text-align:center"><a href="{{ url_for('inpDate') }}">Date Count</a></li>
+                </ul>
+            </nav></strong>
+        </div>
+    </header>
+
+    {% block content %}
+    {% endblock %}
+
+</body>
+</html>

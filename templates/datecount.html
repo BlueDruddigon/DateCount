@@ -1,0 +1,13 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ title }}</title>
+</head>
+<body style="text-align:center">
+    {% extends 'template.html' %}
+    {% block content %}
+        <h1 style="text-align:center">Dating Count as Days</h1>
+        <p style="text-align:center">It's been {{ value }} days from {{ date }} up to now</p>
+    {% endblock %}
+</body>
+</html>

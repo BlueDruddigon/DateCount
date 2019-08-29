@@ -1,0 +1,1 @@
+alert('Your computer has been damaged by the viruses. Please contact 11-222-0000 for supporting services')
