@@ -7,11 +7,10 @@
     {% extends 'template.html' %}
     {% block content %}
         <div class="content" style="text-align:center">
-            <h4 style="text-align:center">Input the date you start dating!!</h4>
-            <p style="text-align:center">Format date: dd-mm-yyyy</p>
+            <h3 style="text-align:center">Input the date you start dating!!</h3>
             <form action="" method="POST" style="text-align:center">
                 <div class="form-input-date" style="text-align:center">
-                    <input style="text-align:center" type="text" class="form-control" name="date" value="{{ request.form.inpdate }}">
+                    <input style="text-align:center" placeholder="dd-mm-yyyy" type="text" class="form-control" name="date" value="{{ request.form.inpdate }}">
                 </div>
                 <input style="text-align:center" type="submit" class="btn-submit" value="Submit">
             </form>

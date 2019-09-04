@@ -1,4 +1,4 @@
-from flask import Flask, render_template, redirect, request
+from flask import Flask, render_template, redirect, request, url_for
 from datetime import datetime, date
 
 app = Flask(__name__)
@@ -16,7 +16,6 @@ def countdate(dates):
     localdate = date.today()
     inpdate = datetime.strptime(dates, '%d-%m-%Y').date()
     diff = int((localdate - inpdate).total_seconds() / (3600 * 24))
-    print(diff)
     return render_template('datecount.html', title='Date Count', date=dates, value=diff)
 
 @app.route('/date/<string:date>')
